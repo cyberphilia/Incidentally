@@ -66,6 +66,7 @@ Vagrant.configure("2") do |config|
   # Puppet, Chef, Ansible, Salt, and Docker are also available. Please see the
   # documentation for more information about their specific syntax and use.
   config.vm.provision "shell", inline: <<-SHELL
+    sudo ufw allow 8000
     apt-get update
     apt-get -y install postgresql postgresql-contrib
     apt-get -y install python3-pip
