@@ -4,6 +4,8 @@
 ### Vagrant ###
 .vagrant/
 
+### SQLLite ###
+db.sqlite3
 
 ### SublimeText ###
 # cache files for sublime text
