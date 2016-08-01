@@ -12,6 +12,8 @@ class Manufacturer(models.Model):
     created = models.DateTimeField(auto_now_add=True)
     modified = models.DateTimeField(auto_now=True)
     name = models.CharField(max_length=30)
+    def __str__(self):
+        return self.name[:50]
 
 
 class Device(models.Model):
@@ -27,6 +29,8 @@ class Device(models.Model):
     virtualized = models.BooleanField(default=False)
     model = models.CharField(max_length=30)
     users = models.CharField(max_length=30)
+    def __str__(self):
+        return self.hostname[:50]
 
 
 class MAC(models.Model):
