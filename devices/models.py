@@ -59,8 +59,6 @@ class Hostname(models.Model):
     """docstring for hostname"""
     name = models.CharField(max_length=30, blank=True)
     device = models.ForeignKey(Device, on_delete=models.CASCADE)
-
-
     def __str__(self):
         return self.name
         

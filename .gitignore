@@ -1,10 +1,6 @@
 
 # Created by https://www.gitignore.io/api/vagrant,sublimetext,python,windows,linux
 
-### Incidentally ###
-# Ignore migrations until complete
-.devices/migrations/
-
 ### Vagrant ###
 .vagrant/
 
