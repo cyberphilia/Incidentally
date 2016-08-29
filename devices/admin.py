@@ -26,6 +26,8 @@ class DeviceAdmin(admin.ModelAdmin):
     inlines = [
         MacInline,HostnameInline,
     ]
+    list_filter = ['created']
+    list_display = ['name','created']
 
 class MACAdmin(admin.ModelAdmin):
     inlines = [
